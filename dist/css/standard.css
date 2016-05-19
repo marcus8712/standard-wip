@@ -1089,6 +1089,10 @@ overflow-x: hidden;
     position: fixed !important;
 }
 
+.open .mobile-toggle {
+    right: 6%;
+}
+
 
 /*----------------
     sidebar
