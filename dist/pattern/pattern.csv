@@ -1,0 +1,20 @@
+type,id,img,title,description
+pattern,modal,,Modal,
+child,modal,modal1.png,Modal Without Title,abcdef
+child,modal,modal2.png,hihi,3kljrs;fjsdf
+child,modal,modal3.png,hoho,sdakflsdf
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
