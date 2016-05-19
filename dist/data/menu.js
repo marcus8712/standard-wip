@@ -18,7 +18,7 @@ d3.csv("/standard-wip/dist/data/data.csv", function (error, data) {
                 .attr("id", d.id);
             block.append("li")
                 .attr("class", "item header")
-                .text(d.content);
+                .text(d.title);
         }
 
         if (d.type == "page") {
@@ -35,7 +35,7 @@ d3.csv("/standard-wip/dist/data/data.csv", function (error, data) {
                     .attr("data-link", d.link);
 
                 li.append("a")
-                    .text(d.content);
+                    .text(d.title);
 
                 // Pattern
                 if (d.id == "pattern" && d.id != d.link) {
@@ -52,11 +52,11 @@ d3.csv("/standard-wip/dist/data/data.csv", function (error, data) {
                 if (d.link == "intro") {
                     li.append("a")
                         .attr("href", "./")
-                        .text(d.content);
+                        .text(d.title);
                 } else {
                     li.append("a")
                         .attr("href", "./" + d.link)
-                        .text(d.content);
+                        .text(d.title);
                 }
 
                 // Pattern
@@ -76,7 +76,7 @@ d3.csv("/standard-wip/dist/data/data.csv", function (error, data) {
             var item = pattern.append("li").attr("class", "item");
             item.append("a")
                 .attr("href", "./pattern/" + d.id + "/" + d.link)
-                .text(d.content);
+                .text(d.title);
         }
 
     });
