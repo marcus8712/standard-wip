@@ -24,9 +24,11 @@ $(window).scroll(function () {
     -------------------*/
 
     if ($(this).scrollTop() > 60) {
-        $('#header .logo-wrapper').fadeOut();
+        $('#header').fadeOut();
+
     } else {
-        $('#header .logo-wrapper').fadeIn();
+        $('#header').fadeIn();
+
     }
 
 });

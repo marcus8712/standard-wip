@@ -46,9 +46,9 @@
             </div>
         </div>
         <button class="ui button mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">
-            <div class="top-bar"></div>
-            <div class="middle-bar"></div>
-            <div class="bottom-bar"></div>
+            <div class="bar top-bar"></div>
+            <div class="bar middle-bar"></div>
+            <div class="bar bottom-bar"></div>
         </button>
     </header>
 
@@ -264,9 +264,9 @@
                 -------------------*/
 
                 if ($(this).scrollTop() > 60) {
-                    $('#header .logo-wrapper').fadeOut();
+                    $('#header').fadeOut();
                 } else {
-                    $('#header .logo-wrapper').fadeIn();
+                    $('#header').fadeIn();
                 }
 
                 $('#layout .number').css({
