@@ -1,4 +1,4 @@
-d3.csv("/standard-wip/dist/menu/menu.csv", function (error, data) {
+d3.csv("/standard-wip/dist/data/data.csv", function (error, data) {
     var mobileNavWrapper = d3.select("#menu").append("div")
         .attr("id", "mobileNavWrapper")
         .attr("class", "nav-wrapper");
@@ -10,7 +10,7 @@ d3.csv("/standard-wip/dist/menu/menu.csv", function (error, data) {
 
     data.forEach(function (d) {
 
-        if (d.type == "header") {
+        if (d.type == "category") {
             var column = grid.append("div")
                 .attr("class", "column");
 
@@ -21,22 +21,35 @@ d3.csv("/standard-wip/dist/menu/menu.csv", function (error, data) {
                 .text(d.content);
         }
 
-        if (d.type == "section") {
+        if (d.type == "page") {
             var page = $("body").data().page;
             var block = d3.select("ul#" + d.id);
 
+
+            // Sample page
             if (d.link == page) {
+
+
                 var li = block.append("li")
                     .attr("class", "item active")
                     .attr("data-link", d.link);
+
                 li.append("a")
                     .text(d.content);
+
+                // Pattern
+                if (d.id == "pattern" && d.id != d.link) {
+                    li.append("ul").attr("class", "pattern");
+                }
+
             } else {
+
                 var li = block.append("li")
                     .attr("class", "item")
                     .attr("data-link", d.link);
 
-                if (d.link == "home") {
+                // Intro
+                if (d.link == "intro") {
                     li.append("a")
                         .attr("href", "./")
                         .text(d.content);
@@ -45,10 +58,25 @@ d3.csv("/standard-wip/dist/menu/menu.csv", function (error, data) {
                         .attr("href", "./" + d.link)
                         .text(d.content);
                 }
+
+                // Pattern
+                if (d.id == "pattern" && d.id != d.link) {
+                    li.append("ul").attr("class", "pattern");
+                }
             }
 
 
 
+
+
+        }
+
+        if (d.type == "pattern") {
+            var pattern = d3.select("[data-link=" + d.id + "] ul");
+            var item = pattern.append("li").attr("class", "item");
+            item.append("a")
+                .attr("href", "./pattern/" + d.id + "/" + d.link)
+                .text(d.content);
         }
 
     });

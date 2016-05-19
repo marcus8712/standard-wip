@@ -314,10 +314,15 @@
     max-width: 500px;
 }
 
+*[data-page="color"] .colorItem {
+    font-family: 'Karla', sans-serif;
+}
+
 *[data-page="color"] .colorItem > .colorName {
     margin-bottom: 10px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    font-size: 14.5px;
 }
 
 *[data-page="color"] .colorItem > .colorBox {
@@ -330,6 +335,8 @@
     margin-top: 10px;
     margin-bottom: 5px;
     display: block;
+    text-transform: uppercase;
+    font-size: 14.5px;
 }
 
 .colorP {
