@@ -871,7 +871,7 @@
 
 @media only screen and (max-width: 499px) {
     *[data-page] #header .logo-wrapper {
-        left: 10%;
+        left: 10% !important;
     }
 }
 
@@ -1081,7 +1081,6 @@ overflow-x: hidden;
 }
 
 .open {
-    position: fixed;
     overflow: hidden;
 }
 
@@ -1089,9 +1088,11 @@ overflow-x: hidden;
     position: fixed !important;
 }
 
+
+/*
 .open .mobile-toggle {
     right: 6%;
-}
+}*/
 
 
 /*----------------
