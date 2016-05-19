@@ -1080,11 +1080,10 @@ overflow-x: hidden;
     top: 7px
 }
 
-/*
 .open {
+    position: fixed;
     overflow: hidden;
 }
-*/
 
 .open #content {
     position: fixed !important;
