@@ -14,7 +14,7 @@
     background-color: #f6f6f6;
 }
 
-#content .page-name {
+#content > .title {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -24,17 +24,6 @@
     margin-top: 150px;
     margin-bottom: 50px;
 }
-
-
-/*
-#content .page-description {
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    margin: 20px auto;
-    font-family: 'Karla', sans-serif;
-    text-transform: uppercase;
-}
-*/
 
 
 /* Block */
@@ -48,15 +37,7 @@
 }
 
 #content .block + .block {
-    margin-top: 40px;
-}
-
-#content .block > p,
-#content p.page-description {
-    margin: 30px auto 50px;
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
+    margin-top: 60px;
 }
 
 #content .block > .title,
@@ -70,6 +51,16 @@
     text-transform: uppercase;
     position: relative;
     color: black;
+}
+
+#content > .description,
+#content .block > .description,
+#content .block > .grid .column:not(.row) > .description {
+    margin: 30px auto 50px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    display: block;
 }
 
 #content .block > .title > .button {
@@ -90,7 +81,7 @@
 
 /* Grid */
 
-#content .block .grid > .title {
+#content .block > .grid .column:not(.row) > .title {
     font-size: 16px !important;
     margin-bottom: 30px;
     font-weight: 600;

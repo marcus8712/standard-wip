@@ -34,11 +34,10 @@
     <!-- Loading -->
     <div class="hexagon-loading"></div>
 
-    <input type="checkbox" id="mobileNavToggle" class="mobile-nav-toggle-box hidden">
 
-    <div id="overlayNav">
+    <!-- Overlay Menu -->
+    <nav id="menu" aria-hidden="true" aria-labelledby="mobile-toggle" role="navigation"></nav>
 
-    </div>
     <!--  Header  -->
     <header id="header">
         <div class="logo-wrapper">
@@ -46,23 +45,21 @@
                 <a href="./"><img src="dist/img/connected.svg" alt="Hoiio Logo"></a>
             </div>
         </div>
-        <label for="mobileNavToggle" class="mobile-toggle show-on-scroll-mobile">
+        <button class="ui button mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">
             <div class="top-bar"></div>
             <div class="middle-bar"></div>
             <div class="bottom-bar"></div>
-        </label>
-
-
+        </button>
     </header>
 
 
     <!-- Content -->
     <div id="content" data-align="center">
-        <div class="page-name">Patterns</div>
+        <div class="title">Patterns</div>
         <!-- Menu -->
-        <div class="block" id="menu">
+        <div class="block" id="menu-block">
             <div class="title">Menu</div>
-            <p>Description of menu.</p>
+            <p class="description" data-width="small">Description of menu.</p>
             <div class="ui grid" data-align="left">
                 <div class="row">
                     <div class="column">
