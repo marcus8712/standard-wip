@@ -1076,6 +1076,10 @@
     top: 7px
 }
 
+.open #content {
+    position: fixed !important;
+}
+
 
 /*----------------
     sidebar
