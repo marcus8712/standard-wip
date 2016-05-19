@@ -1,57 +1,336 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<!doctype html>
+<html>
+
+<head id="home">
+    <title>Hoiio Design Standards</title>
     <meta charset="UTF-8">
-    <title>Standard-wip by marcus8712</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Standard-wip</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/marcus8712/standard-wip" class="btn">View on GitHub</a>
-      <a href="https://github.com/marcus8712/standard-wip/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/marcus8712/standard-wip/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <!-- Page Info -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="dist/img/connected.png">
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="dist/css/standard.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/codeHighlighter.css">
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+    <!-- Core JS -->
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/modernizr.js"></script>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+    <!-- Semantic -->
+    <link rel="stylesheet" type="text/css" href="dist/css/semantic.min.css">
+    <script src="dist/js/semantic.min.js"></script>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+</head>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<body data-page="home">
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+    <!-- Loading -->
+    <div class="hexagon-loading"></div>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+    <!-- Overlay Menu -->
+    <nav id="menu" aria-hidden="true" aria-labelledby="mobile-toggle" role="navigation"></nav>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+    <!--  Header  -->
+    <header id="header">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <a href="./"><img src="dist/img/connected.svg" alt="Hoiio Logo"></a>
+            </div>
+        </div>
+        <button class="ui button mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+            <div class="top-bar"></div>
+            <div class="middle-bar"></div>
+            <div class="bottom-bar"></div>
+        </button>
+    </header>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/marcus8712/standard-wip">Standard-wip</a> is maintained by <a href="https://github.com/marcus8712">marcus8712</a>.</span>
+    <!--  Content  -->
+    <div id="content">
+        <div id="intro" data-style="background">
+            <div class="ui one column stackable grid">
+                <div class="row">
+                    <div class="column" data-align="center">
+                        <div data-align="center" data-position="center">
+                            <div class="present">Hoiio presents</div>
+                            <div class="standard-name">Design Standards</div>
+                            <p data-width="small">
+                                layouts, components, patterns and much more guidelines applied for the whole principles at Hoiio
+                            </p>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="intro-bottom" data-align="center">
+                <img src="dist/img/ico-mouse.png">
+                <div id="scroll-down-animation" style="margin-left:-2px;">
+                    <img src="dist/img/arrow-down.png">
+                </div>
+            </div>
+        </div>
+        <div id="layout">
+            <div class="ui stackable grid">
+                <div class="one column row">
+                    <div class="column" data-align="center">
+                        <div class="number">04</div>
+                        <div class="title">main layouts</div>
+                        <p class="tag-line" data-width="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="image">
+                            <div class="one"><img src="dist/img/layout/page.png" /></div>
+                            <div class="two"><img src="dist/img/layout/sidebar.png" /></div>
+                            <div class="three"><img src="dist/img/layout/card.png" /></div>
+                            <div class="four"><img src="dist/img/layout/modal.png" /></div>
+                        </div>
 
-    </section>
 
-  
-  </body>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="styles" data-style="background">
+            <div class="ui stackable grid" data-width="large">
+                <div class="one column row">
+                    <div class="column" data-align="center">
+                        <div class="title">Styles with ease</div>
+                        <p class="tag-line" data-width="small">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="two column row">
+                    <div class="left column" data-align="left">
+                        <img class="icon" src="dist/img/icon-color.png">
+                        <div class="head">Color Pallete</div>
+                        <p class="description">
+                            The Hoiio palette includes 6 main colors which represents 6 states applied to mostly web applications.
+                        </p>
+                        <div class="item">
+                            <div style="background-color:#008bd9;">primary</div>
+                            <div style="background-color:#2BADD4">info</div>
+                            <div style="background-color:#19b37b">success</div>
+                            <div style="background-color:#E5791A">warning</div>
+                            <div style="background-color:#E64333">error</div>
+                            <div style="background-color:#E6DB19">pending</div>
+                        </div>
+                    </div>
+
+                    <div class="right column">
+                        <img class="icon" src="dist/img/icon-typo.png">
+                        <div class="head">Fonts</div>
+                        <p class="description">
+                            Text font is the Poppins family, which contains five weights, from Light through Bold. With icon font, we use all icon has 409 icons, including all icons of Entypo and several custom icons.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="components">
+            <div class="ui stackable grid">
+                <div class="one column row">
+                    <div class="column" data-align="center">
+                        <div class="number">37</div>
+                        <div class="title">Components</div>
+                        <p class="tag-line" data-width="small">At Hoiio, we applied <strong>Semantic framework</strong>, which revised with Hoiio Hexagon UI, into all app design interface.
+                            <br>Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.
+                        </p>
+                        <button class="ui primary basic button">see all components</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pattern" data-style="background">
+            <div class="ui stackable grid">
+                <div class="one column row">
+                    <div class="column" data-align="center">
+                        <div class="title">Patterns</div>
+                        <p class="tag-line" data-width="small">Design patterns are standard reference points for the experienced user interface designer.
+                        </p>
+                        <img class="icon" src="dist/img/icon-pattern.png" />
+
+                    </div>
+                </div>
+                <div class="one column row">
+                    <div class="column pattern" data-align="center" data-width="large">
+                        <div class="clearfix mosaicflow">
+                            <div class="mosaicflow__item">
+                                <img src="dist/img/pattern/list.png" alt="">
+                            </div>
+                            <div class="mosaicflow__item">
+                                <img src="dist/img/pattern/modal.png" alt="">
+                            </div>
+                            <div class="mosaicflow__item">
+                                <img src="dist/img/pattern/right-panel.png" alt="">
+                            </div>
+                            <div class="mosaicflow__item">
+                                <img src="dist/img/pattern/message.png" alt="">
+                            </div>
+                            <div class="mosaicflow__item">
+                                <img src="dist/img/pattern/calendar.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="one column row">
+                    <div class="column work" data-align="center" data-width="large">
+                        <img src="dist/img/icon-work.png" width="40px" /><a href="./sample">See how patterns work together</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="subscribe">
+            <div class="ui stackable grid">
+                <div class="one column row">
+                    <div class="column" data-align="center">
+                        <p class="tag-line" data-width="small">JOIN TO GET UPDATED ON <strong>DESIGN STANDARDS</strong>
+                        </p>
+                        <br>
+                        <div class="ui action input">
+                            <input type="email" class="email" placeholder="Email Address">
+                            <button class="ui primary button">SUBMIT</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+    <!-- Custom JS -->
+    <script src="dist/js/jquery.mosaicflow.min.js"></script>
+    <script src="dist/js/loadData.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // Page Info
+            $('meta[name=description]').attr("content", "Design Standards is a carefully crafted design developed by Hoiio UX Team.");
+            $('meta[name=keywords]').attr("content", "design, standards, hoiio, uxdesign, user interface, semantic");
+            $('meta[name=author]').attr("content", "Hoiio UX Team");
+
+            //Toggle
+            $('.mobile-toggle, #menu > ul > li > a').click(function (e) {
+                var $toggle = $(this);
+                var $menu = $('#' + $(this).attr('aria-controls'));
+
+                if ($menu.attr('aria-hidden') == 'true') {
+                    $('body').addClass('open');
+                    $menu.attr('aria-hidden', 'false');
+                    $toggle.attr('aria-expanded', 'true');
+                } else if ($menu.attr('aria-hidden') == 'false') {
+                    $('body').removeClass('open');
+                    $menu.attr('aria-hidden', 'true');
+                    $toggle.attr('aria-expanded', 'faremove');
+                }
+            });
+
+
+            //Scroll Down Animation
+            setInterval(function () {
+                $("#scroll-down-animation img").stop(true, true).animate({
+                        marginTop: 15
+                    }, 500, 'easeOutQuad',
+                    function () {
+                        $(this).stop(true, true).animate({
+                            marginTop: 0
+                        }, 500, 'easeOutQuad');
+                    });
+            }, 1000);
+
+
+            //Scroll
+            $(window).scroll(function () {
+
+                /*------------------
+                    Homepage
+                -------------------*/
+
+                if ($(this).scrollTop() > 60) {
+                    $('#header .logo-wrapper').fadeOut();
+                } else {
+                    $('#header .logo-wrapper').fadeIn();
+                }
+
+                $('#layout .number').css({
+                    'top': -($(this).scrollTop() / 6) + "px"
+                });
+
+                $('#layout .image > .one img').css({
+                    'left': -($(this).scrollTop() / 6) + "px"
+                });
+                $('#layout .image > .four img').css({
+                    'left': ($(this).scrollTop() / 4) + "px"
+                });
+                $('#layout .image > .three img').css({
+                    'top': -($(this).scrollTop() / 6) + "px"
+                });
+
+                $('#layout .image > .two img').css({
+                    'top': ($(this).scrollTop() / 6) + "px"
+                });
+
+
+                $('#components .number').css({
+                    'top': -($(this).scrollTop() / 25) + "px"
+                });
+            });
+
+
+            // Detect Device
+
+            if ($(window).width() < 768) {
+                $('body').attr('data-device', 'mobile');
+            } else {
+                $('body').attr('data-device', 'desktop');
+            }
+
+            // Page Info
+            var page = $("body").data().page;
+            var link = [];
+            $("#menu #mobileNavWrapper nav li").each(function () {
+                var txt = $(this).data().link;
+                link.push(txt);
+            });
+
+            for (var j = 0; j < link.length; j++) {
+                if (link[j] == page) {
+                    $('#menu #mobileNavWrapper nav li[data-link="' + link[j] + '"]').addClass("active");
+                }
+            }
+
+
+            $(window).load(function () {
+
+                // Animate loader off screen
+                $("body > .hexagon-loading").fadeOut("slow");
+
+
+            });
+        });
+    </script>
+
+    <script src="dist/js/d3.js"></script>
+    <script src="dist/js/lodash.js"></script>
+    <script src="dist/menu/menuOverlay.js"></script>
+
+</body>
+
 </html>
