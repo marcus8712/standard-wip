@@ -1076,6 +1076,10 @@
     top: 7px
 }
 
+.open {
+    overflow: hidden;
+}
+
 .open #content {
     position: fixed !important;
 }
