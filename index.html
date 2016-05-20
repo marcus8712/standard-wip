@@ -219,13 +219,15 @@
     <script src="dist/data/general.js"></script>
 
     <script>
+        var mobileWidth = $('.mobile-toggle').offset().right;
+        alert(mobileWidth);
+        var aftermobileWidth = mobileWidth + 15;
+        $(".open .mobile-toggle").css({
+            right: "'" + aftermobileWidth + "'"
+        });
         $(document).ready(function () {
 
-            var mobileWidth = $('.mobile-toggle').offset().right;
-            var aftermobileWidth = mobileWidth + 15;
-            $(".open .mobile-toggle").css({
-                right: "'" + aftermobileWidth + "'"
-            });
+
 
             // Page Info
             $('meta[name=description]').attr("content", "Design Standards is a carefully crafted design developed by Hoiio UX Team.");
