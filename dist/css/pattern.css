@@ -48,7 +48,12 @@
 
 *[data-page="pattern"] .grid a.item:hover,
 *[data-page="pattern"] .grid a.item:active {
-    border: 1px solid #008bd9;
+    border: 2px solid #008bd9;
+}
+
+*[data-page="pattern"] .grid a.item > .title,
+*[data-page="pattern"] .grid a.item > p {
+    color: #414141;
 }
 
 *[data-page="pattern"] #content .block .item > .description {
