@@ -224,8 +224,8 @@
             var mobile = $('#mobileNavigation').height();
             var window = $(window).height();
 
-            if (mobile < window) alert(mobile);
-            else alert(window);
+            if (mobile < window) $('.mobile-toggle').css("right", "none");
+            else $('.mobile-toggle').css("right", "yes");
 
 
             // Page Info
