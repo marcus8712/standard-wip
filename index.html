@@ -330,17 +330,13 @@
 
         (function ($) {
             $.fn.hasScrollBar = function () {
-                var e = this.get(0);
-                return {
-                    vertical: e.scrollHeight > e.clientHeight,
-                    horizontal: e.scrollWidth > e.clientWidth
-                };
+                return this.get(0).scrollHeight > this.height();
             }
         })(jQuery);
 
-        if ($('#mobileNavWrapper').hasScrollBar().vertical) {
-            alert('yes');
-        }
+        $(function () {
+            alert('content 1: ' + $('#mobileNavWrapper').hasScrollBar());
+        });
     </script>
 
     <script src="dist/js/d3.js"></script>
