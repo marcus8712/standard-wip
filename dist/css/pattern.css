@@ -42,12 +42,13 @@
 
 *[data-page="pattern"] .grid a.item {
     border: 1px solid #ccc;
-    padding: 15px;
+    padding: 14px;
     display: block;
 }
 
 *[data-page="pattern"] .grid a.item:hover,
 *[data-page="pattern"] .grid a.item:active {
+    padding: 15px !important;
     border: 2px solid #008bd9;
 }
 
