@@ -34,9 +34,18 @@ $(window).scroll(function () {
 });
 
 
+
+
 // Ready
 
 $(document).ready(function () {
+
+    var window = $(window).width();
+
+    var document = $(document).width();
+
+    if (window > document) alert(window);
+    else alert(document)
 
     /*------------------
         Menu Overlay
