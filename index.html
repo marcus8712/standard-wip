@@ -219,9 +219,16 @@
     <script src="dist/data/general.js"></script>
 
     <script>
+        (function ($) {
+            $.fn.hasScrollBar = function () {
+                return this.get(0).scrollHeight > this.height();
+            }
+        })(jQuery);
+
+
         $(document).ready(function () {
 
-
+            alert('content 1: ' + $('#mobileNavWrapper').hasScrollBar());
 
             // Page Info
             $('meta[name=description]').attr("content", "Design Standards is a carefully crafted design developed by Hoiio UX Team.");
@@ -326,16 +333,6 @@
 
 
             });
-        });
-
-        (function ($) {
-            $.fn.hasScrollBar = function () {
-                return this.get(0).scrollHeight > this.height();
-            }
-        })(jQuery);
-
-        $(function () {
-            alert('content 1: ' + $('#mobileNavWrapper').hasScrollBar());
         });
     </script>
 
