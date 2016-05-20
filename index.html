@@ -221,6 +221,12 @@
     <script>
         $(document).ready(function () {
 
+            var mobile = $('#mobileNavigation').height();
+            var window = $(window).height();
+
+            if (mobile < window) alert(mobile);
+            else alert(window);
+
 
             // Page Info
             $('meta[name=description]').attr("content", "Design Standards is a carefully crafted design developed by Hoiio UX Team.");
