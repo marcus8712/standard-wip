@@ -221,6 +221,13 @@
     <script>
         $(document).ready(function () {
 
+            var window = $(window).width();
+
+            var document = $(document).width();
+
+            if (window > document) alert(window);
+            else alert(document)
+
             // Page Info
             $('meta[name=description]').attr("content", "Design Standards is a carefully crafted design developed by Hoiio UX Team.");
             $('meta[name=keywords]').attr("content", "design, standards, hoiio, uxdesign, user interface, semantic");
