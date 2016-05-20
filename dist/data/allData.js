@@ -96,7 +96,7 @@ d3.csv("/standard-wip/dist/data/content.csv", function (error, data) {
     data.forEach(function (d) {
 
         if (d.type == "block") {
-            var block = d3.select("ul#" + d.id);
+            var block = d3.select("ul#" + d.current);
             var li = block.append("li")
                 .attr("class", "item")
                 .attr("data-link", d.link);
@@ -108,11 +108,12 @@ d3.csv("/standard-wip/dist/data/content.csv", function (error, data) {
         }
 
         if (d.type == "item") {
-            var block = d3.select("ul#" + d.id);
+            var block = d3.select("ul#" + d.current);
             var li = block.append("li")
                 .attr("class", "item")
                 .attr("data-pattern", d.link);
             li.append("a")
+                .attr("href", "./" + d.parent + "/" + d.current + "/" + d.link)
                 .text(d.title);
         }
 
