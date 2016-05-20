@@ -94,8 +94,50 @@ d3.csv("/standard-wip/dist/data/menu.csv", function (error, data) {
 d3.csv("/standard-wip/dist/data/content.csv", function (error, data) {
 
     var page = $("body").data().page;
-    var content = d3.select("#content");
+    var content = $("#content");
+    var contentTitle = $("#content > .title");
+    var blockTitle = $("#content > .block > .title");
+    var blockUsage = $("#content > .block > .description");
+
     data.forEach(function (d) {
+
+        if (page == "pattern-child") {
+
+            if (d.type == "item") {
+                // Title Page
+                d3.select("head > title").text(d.title + " | Hoiio Design Standards");
+
+                // Content Title
+                contentTitle
+                    .append("a")
+                    .attr("href", "./")
+                    .text("Patterns");
+
+                contentTitle
+                    .append(span)
+                    .text(d.id);
+
+
+                // Block Title
+                blockTitle
+                    .append(span)
+                    .text(d.title);
+
+                var button = blockTitle
+                    .append("button")
+                    .attr("class", "ui round icon button");
+
+                button
+                    .append("i")
+                    .attr("class", "icon code");
+
+                // Block Usage
+                blockUsage.text(d.usage);
+
+
+
+            }
+        }
 
         if (page == "pattern") {
 
