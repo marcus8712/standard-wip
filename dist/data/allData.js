@@ -94,10 +94,10 @@ d3.csv("/standard-wip/dist/data/menu.csv", function (error, data) {
 d3.csv("/standard-wip/dist/data/content.csv", function (error, data) {
 
     var page = $("body").data().page;
-    var content = $("#content");
-    var contentTitle = $("#content > .title");
-    var blockTitle = $("#content > .block > .title");
-    var blockUsage = $("#content > .block > .description");
+
+    var contentTitle = d3.select("#content .title");
+    var blockTitle = d3.select("#content .block .title");
+    var blockUsage = d3.select("#content .block .description");
 
     data.forEach(function (d) {
 
@@ -140,7 +140,7 @@ d3.csv("/standard-wip/dist/data/content.csv", function (error, data) {
         }
 
         if (page == "pattern") {
-
+            var content = d3.select("#content");
             if (d.type == "block") {
                 var block = content.append("div")
                     .attr("class", "block")
