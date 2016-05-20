@@ -1,16 +1,16 @@
-type,id,link,title,description
-block,pattern,modal,Modal,
-item,modal,modal-title,Modal,
-item,modal,modal1.png,Modal Without Title,abcdef
-item,modal,modal2.png,hihi,3kljrs;fjsdf
-item,modal,modal3.png,hoho,sdakflsdf
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+type,parent,current,link,title,description
+block,,pattern,modal,Modal,
+item,pattern,modal,modal-title,Modal,
+item,pattern,modal,modal1.png,Modal Without Title,abcdef
+item,pattern,modal,modal2.png,hihi,3kljrs;fjsdf
+item,pattern,modal,modal3.png,hoho,sdakflsdf
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
