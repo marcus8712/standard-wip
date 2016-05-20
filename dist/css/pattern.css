@@ -40,6 +40,21 @@
     font-weight: 600!important;
 }
 
+*[data-page="pattern"] .grid a.item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: block;
+}
+
+*[data-page="pattern"] .grid a.item:hover,
+*[data-page="pattern"] .grid a.item:active {
+    border: 1px solid #008bd9;
+}
+
+*[data-page="pattern"] #content .block .item > .description {
+    margin-bottom: 10px !important;
+}
+
 
 /*--------------------------
     modal

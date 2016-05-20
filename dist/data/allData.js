@@ -115,7 +115,7 @@ d3.csv("/standard-wip/dist/data/content.csv", function (error, data) {
             if (d.type == "item") {
                 var grid = d3.select("#" + d.id + " .grid");
                 var column = grid.append("div").attr("class", "column");
-                var item = column.append("div").attr("class", "item");
+                var item = column.append("a").attr("class", "item").attr("href", "./" + d.parent + "/" + d.id + "/" + d.link);
 
                 item.append("div").attr("class", "title").text(d.title);
                 var thumbnail = item.append("div").attr("class", "thumbnail");
@@ -125,29 +125,29 @@ d3.csv("/standard-wip/dist/data/content.csv", function (error, data) {
 
             }
 
-        } else {
-
-            if (d.type == "block") {
-                var block = d3.select("ul#" + d.id);
-                var li = block.append("li")
-                    .attr("class", "item")
-                    .attr("data-link", d.link);
-                var ul = li.append("ul")
-                    .attr("id", d.link);
-                ul.append("li")
-                    .attr("class", "item header")
-                    .text(d.title);
-            }
-
-            if (d.type == "item") {
-                var block = d3.select("ul#" + d.id);
-                var li = block.append("li")
-                    .attr("class", "item")
-                    .attr("data-pattern", d.link);
-                li.append("a")
-                    .attr("href", "./" + d.parent + "/" + d.id + "/" + d.link)
-                    .text(d.title);
-            }
         }
+
+        if (d.type == "block") {
+            var block = d3.select("ul#" + d.id);
+            var li = block.append("li")
+                .attr("class", "item")
+                .attr("data-link", d.link);
+            var ul = li.append("ul")
+                .attr("id", d.link);
+            ul.append("li")
+                .attr("class", "item header")
+                .text(d.title);
+        }
+
+        if (d.type == "item") {
+            var block = d3.select("ul#" + d.id);
+            var li = block.append("li")
+                .attr("class", "item")
+                .attr("data-pattern", d.link);
+            li.append("a")
+                .attr("href", "./" + d.parent + "/" + d.id + "/" + d.link)
+                .text(d.title);
+        }
+
     });
 });
