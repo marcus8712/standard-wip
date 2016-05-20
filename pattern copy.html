@@ -2,7 +2,7 @@
 <html>
 
 <head id="pattern">
-    <title>Pattern | Hoiio Design Standards</title>
+    <title>text | Hoiio Design Standards</title>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -52,1308 +52,138 @@
         </button>
     </header>
 
+    <!-- Sidebar -->
+    <div class="ui sidebar right" id="menu-width-sidebar">
+        <h4>Clearing Rows</h4>
+        <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;block&quot; id=&quot;modal-with-title&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;ui grid&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;column&quot;&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+    </div>
 
     <!-- Content -->
-    <div id="content" data-align="center">
-        <div class="title"><a href="./pattern">Patterns:</a> Modal</div>
-        <!-- Menu -->
-        <div class="block" id="menu-block">
-            <div class="title">Menu</div>
-            <p class="description" data-width="small">Description of menu.</p>
-            <div class="ui grid" data-align="left">
-                <div class="row">
-                    <div class="column">
-                        <!-- Menu -->
-                        <div class="ui app menu">
-                            <div class="menu item">
-                                <button class="ui icon button">
-                                    <i class="icon menu"></i>
-                                </button>
+    <div class="pusher">
+        <div id="content" data-align="center">
+            <div class="title"><a href="./pattern">Patterns:</a> Modal</div>
 
-                            </div>
-                            <div class="header item">
-                                Dashboard
-                            </div>
-                            <a class="item">
-Overview
-</a>
-                            <div class="active item">
-                                Members
-                            </div>
-                            <a class="item">
-Usage History
-</a>
-                            <a class="item">
-Subscriptions
-</a>
-                            <a class="item">
-Payment
-</a>
-                            <a class="item">
-Settings
-</a>
-
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="ui app menu">
-                            <div class="menu item">
-                                <button class="ui icon button">
-                                    <i class="icon menu"></i>
-                                </button>
-
-                            </div>
-                            <div class="header item">
-                                Dashboard
-                            </div>
-                            <a class="item">
-Overview
-</a>
-                            <div class="item">
-                                Members
-                            </div>
-                            <div class="ui dropdown item" tabindex="0">
-                                Categories
-                                <i class="dropdown icon"></i>
-                                <div class="menu transition hidden" tabindex="-1">
-                                    <a class="item">Electronics</a>
-                                    <a class="item">Automotive</a>
-                                    <a class="item">Home</a>
-                                </div>
-                            </div>
-                            <a class="item">
-Subscriptions
-</a>
-                            <a class="item">
-Payment
-</a>
-                            <a class="item">
-Settings
-</a>
-
-                        </div>
-                    </div>
+            <!-- Menu -->
+            <div class="block" id="menu-width">
+                <div class="title">
+                    Menu
+                    <button class="ui round icon button"><i class="icon code"></i></button>
                 </div>
-            </div>
-        </div>
+                <p class="description" data-width="small">Description of menu.</p>
+                <div class="ui grid" data-align="left">
+                    <div class="row">
+                        <div class="column">
+                            <!-- -->
+                            <div class="ui app menu">
+                                <div class="menu item">
+                                    <button class="ui icon button">
+                                        <i class="icon menu"></i>
+                                    </button>
 
-        <!-- Page Header -->
-        <div class="block" id="page-header">
-            <div class="title">Page Header</div>
-            <p>Description of page header.</p>
-            <div class="ui grid" data-width="huge" data-align="left">
-                <div class="row">
-                    <div class="column">
-                        <!-- Text -->
-                        <div class="ui page head segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left six wide column">
+                                </div>
+                                <div class="header item">
                                     Dashboard
                                 </div>
-                                <div class="right aligned ten wide column">
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Button -->
-                        <div class="ui page head segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left floated six wide column">
+                                <a class="item">
+Overview
+</a>
+                                <div class="active item">
                                     Members
                                 </div>
-                                <div class="right aligned right floated ten wide column">
-                                    <button class="ui primary button">
-                                        <i class="icon add user"></i>Invite member
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Buttons -->
-                        <div class="ui page head segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left floated six wide column">
-                                    Company
-                                </div>
-                                <div class="right aligned right floated ten wide column">
-                                    <button class="ui button">
-                                        <i class="icon add user"></i>Import staff
-                                    </button>
-                                    <button class="ui primary button">
-                                        <i class="icon export"></i>Export to CSV file
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Search -->
-                        <div class="ui page head segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left floated six wide column">
-                                    Contact Manager
-                                </div>
-                                <div class="right aligned right floated ten wide column">
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-                                </div>
-
+                                <a class="item">
+Usage History
+</a>
+                                <a class="item">
+Subscriptions
+</a>
+                                <a class="item">
+Payment
+</a>
+                                <a class="item">
+Settings
+</a>
 
                             </div>
-                        </div>
 
-                        <!-- Statistic -->
-                        <div class="ui page head segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left floated six wide column">
-                                    Hoiio Customers
-                                </div>
-                                <div class="right aligned right floated ten wide column">
-                                    <div class="ui horizontal statistic">
-                                        <div class="value">
-                                            105
-                                        </div>
-                                        <div class="label">
-                                            Total
-                                            <br>Contacts
-                                        </div>
-                                    </div>
-                                    <div class="ui pending horizontal statistic">
-                                        <div class="value">
-                                            22
-                                        </div>
-                                        <div class="label">
-                                            Duplicate
-                                            <br>Cases
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <!-- Sub Page -->
-                        <div class="ui page head segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left floated six wide column">
-                                    <div class="ui breadcrumb ">
-                                        <a class="section">Company</a>
-                                        <div class="divider"><i class="chevron right icon"></i></div>
-                                        <div class="active section">Staff</div>
-                                    </div>
-                                </div>
-                                <div class="right aligned right floated ten wide column">
-                                    <button class="ui primary button">
-                                        <i class="icon add user"></i>Invite member
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <!-- Menu -->
+            <div class="block" id="menu-width">
+                <div class="title">
+                    Menu
+                    <button class="ui round icon button"><i class="icon code"></i></button>
+                </div>
+                <p class="description" data-width="small">Description of menu.</p>
+                <div class="ui grid" data-align="left">
+                    <div class="row">
+                        <div class="column">
+                            <!-- -->
+                            <div class="ui app menu">
+                                <div class="menu item">
+                                    <button class="ui icon button">
+                                        <i class="icon menu"></i>
+                                    </button>
 
-        <!-- Page Tab -->
-        <div class="block" id="page-tabs">
-            <div class="title">Page Tabs</div>
-            <p>Description of tabs.</p>
-            <div class="ui grid" data-width="huge" data-align="left">
-                <div class="row">
-                    <div class="column">
-                        <!-- Text -->
-                        <div class="ui page tabs segment">
-                            <div class="ui tabular menu">
-                                <div class="active item" data-tab="first">
-                                    Marketing
                                 </div>
-                                <a class="item" data-tab="second">
-               Sales
-           </a>
-                                <a class="item" data-tab="thrid">
-               Human Resource
-           </a>
-                                <a class="item" data-tab="fourth">
-               Engineers
-           </a>
-
-                            </div>
-
-                            <div class="ui tab" data-tab="first">
-                                <!-- Tab Content !-->
-                            </div>
-                            <div class="ui tab" data-tab="second">
-                                <!-- Tab Content !-->
-                            </div>
-
-                        </div>
-
-                        <!-- Icon -->
-                        <div class="ui page tabs segment">
-                            <div class="ui tabular menu">
-                                <div class="active item" data-tab="first">
-                                    <i class="phone icon"></i>Voice Call
+                                <div class="header item">
+                                    Dashboard
                                 </div>
-                                <a class="item" data-tab="second">
-                                    <i class="chat icon"></i>SMS/ MMS
-                                </a>
-                                <a class="item" data-tab="thrid">
-                                    <i class="print icon"></i>Fax Message
-                                </a>
-                                <a class="item" data-tab="fourth">
-                                    <i class="mail icon"></i>Email
-                                </a>
-                                <a class="item" data-tab="fifth">
-                                    <i class="credit card icon"></i>Home Address
-                                </a>
-                            </div>
-
-                            <div class="ui tab" data-tab="first">
-                                <!-- Tab Content !-->
-                            </div>
-                            <div class="ui tab" data-tab="second">
-                                <!-- Tab Content !-->
-                            </div>
-
-                        </div>
-
-                        <!-- Icon & Label -->
-                        <div class="ui page tabs segment">
-                            <div class="ui tabular menu">
+                                <a class="item">
+Overview
+</a>
                                 <div class="active item">
-                                    <i class="phone icon"></i>Telephone number
-                                    <div class="ui tiny info label" data-position="top center" data-content="12 items" data-variation="inverted">12</div>
+                                    Members
                                 </div>
                                 <a class="item">
-                                    <i class="mail icon"></i>Mail
-                                    <div class="ui tiny label" data-position="top center" data-content="12 items" data-variation="inverted">7</div>
-                                </a>
+Usage History
+</a>
                                 <a class="item">
-                                    <i class="print icon"></i>Fax
-                                    <div class="ui tiny label" data-position="top center" data-content="12 items" data-variation="inverted">7</div>
-                                </a>
+Subscriptions
+</a>
                                 <a class="item">
-                                    <i class="credit card icon"></i>Home Address
-                                    <div class="ui tiny label" data-position="top center" data-content="12 items" data-variation="inverted">7</div>
-                                </a>
+Payment
+</a>
+                                <a class="item">
+Settings
+</a>
+
                             </div>
 
-                        </div>
-
-                        <!-- Icon & Label -->
-                        <div class="ui page tabs segment">
-                            <div class="ui tabular menu">
-                                <!-- Left -->
-                                <div class="active item"><i class="list icon"></i>Activities</div>
-                                <a class="item"><i class="bug icon"></i>Report</a>
-                                <a class="item"><i class="pin icon"></i>Pinned document<div class="ui info mini empty circular label" data-position="top center" data-content="new document" data-variation="inverted"></div></a>
-                                <a class="item"><i class="line graph icon"></i>Statistics</a>
-
-                                <!-- Right -->
-                                <div class="right menu">
-                                    <a class="item"><i class="setting icon"></i>Settings</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Page Info -->
-        <div class="block" id="page-info">
-            <div class="title">Page Info</div>
-            <p>Description of page info.</p>
-            <div class="ui grid" data-width="huge" data-align="left">
-                <div class="row">
-                    <div class="column">
-                        <!-- Statistic -->
-                        <div class="ui page information segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left column">
-                                    <div class="ui horizontal statistic">
-                                        <div class="value">100</div>
-                                        <div class="label">members</div>
-                                    </div>
-
-                                    <div class="ui pending horizontal statistic">
-                                        <div class="value">8</div>
-                                        <div class="label">pending invites</div>
-                                    </div>
-                                </div>
-
-                                <div class="right aligned column">
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Last Updated -->
-                        <div class="ui page information segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left column">
-                                    <p>Last updated at <span class="time">10 Dec 2015, 03:19 PM</span></p>
-                                </div>
-
-                                <div class="right aligned column">
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Select All -->
-                        <div class="ui page information segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left column">
-                                    <p><span class="all">15</span> contacts on this page are selected. <a>Select all 1234 contacts.</a></p>
-                                </div>
-
-                                <div class="right aligned column">
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Filter -->
-                        <div class="ui page information segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left aligned six wide column">
-                                    <div class="ui horizontal statistic">
-                                        <div class="value">100</div>
-                                        <div class="label">members</div>
-                                    </div>
-
-                                    <div class="ui pending horizontal statistic">
-                                        <div class="value">8</div>
-                                        <div class="label">pending invites</div>
-                                    </div>
-                                </div>
-
-                                <div class="right aligned right floated ten wide column">
-                                    <div class="ui scrolling dropdown button">
-                                        <div class="text">all users</div>
-                                        <i class="dropdown icon"></i>
-                                        <div class="menu">
-                                            <div class="item active selected">All users</div>
-                                            <div class="item">Samip Sarad</div>
-                                            <div class="item">Steve Jobs</div>
-                                            <div class="item">Steve Van</div>
-                                            <div class="item">Leonardo DiCarprio</div>
-                                            <div class="item">John Mike</div>
-                                            <div class="item">Jane Anaberthy</div>
-                                            <div class="item">Thi Hon</div>
-                                            <div class="item">Huyen Xu</div>
-                                            <div class="item">Cash Hoang</div>
-                                            <div class="item">Marcus</div>
-
-                                        </div>
-                                    </div>
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Button -->
-                        <div class="ui page information segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left aligned five wide column">
-                                    <div class="ui horizontal statistic">
-                                        <div class="value">100</div>
-                                        <div class="label">members</div>
-                                    </div>
-
-                                    <div class="ui pending horizontal statistic">
-                                        <div class="value">8</div>
-                                        <div class="label">pending invites</div>
-                                    </div>
-                                </div>
-
-                                <div class="right aligned right floated eleven wide column">
-                                    <button class="ui primary button"><i class="copy icon"></i> Duplicate</button>
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Group Button -->
-                        <div class="ui page information segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left aligned five wide column">
-                                    <div class="ui horizontal statistic">
-                                        <div class="value">100</div>
-                                        <div class="label">members</div>
-                                    </div>
-
-                                    <div class="ui pending horizontal statistic">
-                                        <div class="value">8</div>
-                                        <div class="label">pending invites</div>
-                                    </div>
-                                </div>
-
-                                <div class="right aligned right floated eleven wide column">
-                                    <div class="ui primary buttons">
-                                        <div class="ui button"><i class="copy icon"></i> Duplicate</div>
-                                        <div class="ui top right dropdown icon button" id="combo-dropdown">
-                                            <i class="dropdown icon"></i>
-                                            <div class="menu">
-                                                <div class="item"><i class="download cloud icon"></i> Download</div>
-                                                <div class="item"><i class="archive icon"></i> Archive</div>
-                                                <div class="item"><i class="trash icon"></i> Delete</div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Filter -->
-                        <div class="ui page information segment">
-                            <div class="ui middle aligned two column grid">
-                                <div class="left aligned six wide column">
-                                    <div class="ui horizontal statistic">
-                                        <div class="value">100</div>
-                                        <div class="label">members</div>
-                                    </div>
-
-                                    <div class="ui pending horizontal statistic">
-                                        <div class="value">8</div>
-                                        <div class="label">pending invites</div>
-                                    </div>
-                                </div>
-
-                                <div class="right aligned right floated ten wide column">
-                                    <div class="ui primary buttons">
-                                        <div class="ui button"><i class="copy icon"></i> Duplicate</div>
-                                        <div class="ui top right dropdown icon button" id="combo-dropdown">
-                                            <i class="dropdown icon"></i>
-                                            <div class="menu">
-                                                <div class="item"><i class="download cloud icon"></i> Download</div>
-                                                <div class="item"><i class="archive icon"></i> Archive</div>
-                                                <div class="item"><i class="trash icon"></i> Delete</div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ui scrolling dropdown button">
-                                        <div class="text">all users</div>
-                                        <i class="dropdown icon"></i>
-                                        <div class="menu">
-                                            <div class="item active selected">All users</div>
-                                            <div class="item">Samip Sarad</div>
-                                            <div class="item">Steve Jobs</div>
-                                            <div class="item">Steve Van</div>
-                                            <div class="item">Leonardo DiCarprio</div>
-                                            <div class="item">John Mike</div>
-                                            <div class="item">Jane Anaberthy</div>
-                                            <div class="item">Thi Hon</div>
-                                            <div class="item">Huyen Xu</div>
-                                            <div class="item">Cash Hoang</div>
-                                            <div class="item">Marcus</div>
-
-                                        </div>
-                                    </div>
-                                    <div class="ui icon input">
-                                        <input type="text" placeholder="Search staff">
-                                        <i class="search icon"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
 
-        <!-- Page Content -->
-        <div class="block" id="page-content-table">
-            <div class="title">Page Content</div>
-            <p>Description of table.</p>
-            <div class="ui one column grid" data-width="huge" data-align="center">
-                <div class="title">Text Only</div>
-                <div class="column">
-                    <!-- Text -->
-                    <div class="ui page content segment">
-                        <table class="ui very basic compact unstackable table">
-                            <thead>
-                                <tr>
-                                    <th>Full Name</th>
-                                    <th>Job Title</th>
-                                    <th>Phone Number</th>
-                                    <th>Email</th>
-                                    <th>Last Accessed</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="fullname">Steve Van</td>
-                                    <td>General Manager</td>
-                                    <td>+84 905721417</td>
-                                    <td>stevean@hoiio.com</td>
-                                    <td>03 Mar 2016, 11:47 AM</td>
-                                </tr>
-                                <tr>
-                                    <td class="fullname">Tuan Vo</td>
-                                    <td>Team Lead</td>
-                                    <td>+65 91271034</td>
-                                    <td>tuan@hoiio.com</td>
-                                    <td>26 Feb 2016, 08:18 AM</td>
-                                </tr>
-                                <tr>
-                                    <td class="fullname">Cash Hoang</td>
-                                    <td>Senior Engineer</td>
-                                    <td>+65 97507182</td>
-                                    <td>cash@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                                <tr>
-                                    <td class="fullname">Huyen Xu</td>
-                                    <td>Admin Manager</td>
-                                    <td>+65 96445229</td>
-                                    <td>xu@hoiio.com</td>
-                                    <td>04 Mar 2016, 06:50 PM</td>
-                                </tr>
-                                <tr>
-                                    <td class="fullname">Uyen Hime</td>
-                                    <td>UX Designer</td>
-                                    <td>+65 97507182</td>
-                                    <td>hime@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                            </tbody>
-                            <tfoot></tfoot>
-                        </table>
-                    </div>
-                </div>
-                <div class="title">Text with Avatar</div>
-                <div class="column">
-                    <!-- Avatar -->
-                    <div class="ui page content segment">
-                        <table class="ui very basic compact unstackable table">
-                            <thead>
-                                <tr>
-                                    <th class="left aligned">Full Name</th>
-                                    <th>Job Title</th>
-                                    <th>Phone Number</th>
-                                    <th>Email</th>
-                                    <th>Last Accessed</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_1.jpg"><span>Steve Van</span></td>
-                                    <td>General Manager</td>
-                                    <td>+84 905721417</td>
-                                    <td>stevean@hoiio.com</td>
-                                    <td>03 Mar 2016, 11:47 AM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
-                                    <td>Team Lead</td>
-                                    <td>+65 91271034</td>
-                                    <td>tuan@hoiio.com</td>
-                                    <td>26 Feb 2016, 08:18 AM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
-                                    <td>Senior Engineer</td>
-                                    <td>+65 97507182</td>
-                                    <td>cash@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
-                                    <td>Admin Manager</td>
-                                    <td>+65 96445229</td>
-                                    <td>xu@hoiio.com</td>
-                                    <td>04 Mar 2016, 06:50 PM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
-                                    <td>UX Designer</td>
-                                    <td>+65 97507182</td>
-                                    <td>hime@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-
-                            </tfoot>
-                        </table>
-                    </div>
-
-                </div>
-
-                <div class="title">Image</div>
-                <div class="column">
-                    <!-- Image -->
-                    <div class="ui page content segment">
-                        <table class="ui very basic compact unstackable table">
-                            <thead>
-                                <tr>
-                                    <th class="left aligned">Full Name</th>
-                                    <th>App Usage</th>
-                                    <th>Job Title</th>
-                                    <th>Phone Number</th>
-                                    <th>Email</th>
-                                    <th>Last Accessed</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_1.jpg"><span>Steve Van</span></td>
-                                    <td><img class="ui mini radius image" src="dist/img/app/app_1.png"></td>
-                                    <td>General Manager</td>
-                                    <td>+84 905721417</td>
-                                    <td>stevean@hoiio.com</td>
-                                    <td>03 Mar 2016, 11:47 AM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
-                                    <td><img class="ui mini radius image" src="dist/img/app/app_2.png"></td>
-                                    <td>Team Lead</td>
-                                    <td>+65 91271034</td>
-                                    <td>tuan@hoiio.com</td>
-                                    <td>26 Feb 2016, 08:18 AM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
-                                    <td><img class="ui mini radius image" src="dist/img/app/app_3.png"></td>
-                                    <td>Senior Engineer</td>
-                                    <td>+65 97507182</td>
-                                    <td>cash@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
-                                    <td><img class="ui mini radius image" src="dist/img/app/app_4.png"></td>
-                                    <td>Admin Manager</td>
-                                    <td>+65 96445229</td>
-                                    <td>xu@hoiio.com</td>
-                                    <td>04 Mar 2016, 06:50 PM</td>
-                                </tr>
-                                <tr>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
-                                    <td><img class="ui mini radius image" src="dist/img/app/app_5.png"></td>
-                                    <td>UX Designer</td>
-                                    <td>+65 97507182</td>
-                                    <td>hime@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-
-                            </tfoot>
-                        </table>
-                    </div>
-
-                </div>
-                <div class="title">Selection</div>
-                <div class="column">
-                    <!-- Select box -->
-                    <div class="ui page content segment">
-                        <table class="ui very basic compact unstackable table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </th>
-                                    <th>Full Name</th>
-                                    <th>Job Title</th>
-                                    <th>Phone Number</th>
-                                    <th>Email</th>
-                                    <th>Last Accessed</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_1.jpg"><span>Steve Van</span></td>
-                                    <td>General Manager</td>
-                                    <td>+84 905721417</td>
-                                    <td>stevean@hoiio.com</td>
-                                    <td>03 Mar 2016, 11:47 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
-                                    <td>Team Lead</td>
-                                    <td>+65 91271034</td>
-                                    <td>tuan@hoiio.com</td>
-                                    <td>26 Feb 2016, 08:18 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
-                                    <td>Senior Engineer</td>
-                                    <td>+65 97507182</td>
-                                    <td>cash@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
-                                    <td>Admin Manager</td>
-                                    <td>+65 96445229</td>
-                                    <td>xu@hoiio.com</td>
-                                    <td>04 Mar 2016, 06:50 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
-                                    <td>UX Designer</td>
-                                    <td>+65 97507182</td>
-                                    <td>hime@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-
-                            </tfoot>
-                        </table>
-                    </div>
-
-                </div>
-                <div class="title">Stars</div>
-                <div class="column">
-                    <!-- Star-->
-                    <div class="ui page content segment">
-                        <table class="ui very basic compact unstackable table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </th>
-                                    <th></th>
-                                    <th>Full Name</th>
-                                    <th>Job Title</th>
-                                    <th>Phone Number</th>
-                                    <th>Email</th>
-                                    <th>Last Accessed</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-rating="1" data-max-rating="1"></div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_1.jpg"><span>Steve Van</span></td>
-                                    <td>General Manager</td>
-                                    <td>+84 905721417</td>
-                                    <td>stevean@hoiio.com</td>
-                                    <td>03 Mar 2016, 11:47 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
-                                    <td>Team Lead</td>
-                                    <td>+65 91271034</td>
-                                    <td>tuan@hoiio.com</td>
-                                    <td>26 Feb 2016, 08:18 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
-                                    <td>Senior Engineer</td>
-                                    <td>+65 97507182</td>
-                                    <td>cash@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
-                                    <td>Admin Manager</td>
-                                    <td>+65 96445229</td>
-                                    <td>xu@hoiio.com</td>
-                                    <td>04 Mar 2016, 06:50 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                        <td><img class="ui avatar image" src="dist/img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
-                                        <td>UX Designer</td>
-                                        <td>+65 97507182</td>
-                                        <td>hime@hoiio.com</td>
-                                        <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="title">Dots</div>
-                <div class="column">
-                    <!-- Dot -->
-                    <div class="ui page content segment">
-                        <table class="ui very basic compact unstackable table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </th>
-                                    <th></th>
-                                    <th>Full Name</th>
-                                    <th>Job Title</th>
-                                    <th>Phone Number</th>
-                                    <th>Email</th>
-                                    <th>Last Accessed</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_1.jpg"><span>Steve Van</span></td>
-                                    <td>General Manager</td>
-                                    <td>+84 905721417</td>
-                                    <td>stevean@hoiio.com</td>
-                                    <td>03 Mar 2016, 11:47 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty success circular label" data-position="top center" data-content="Online" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
-                                    <td>Team Lead</td>
-                                    <td>+65 91271034</td>
-                                    <td>tuan@hoiio.com</td>
-                                    <td>26 Feb 2016, 08:18 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
-                                    <td>Senior Engineer</td>
-                                    <td>+65 97507182</td>
-                                    <td>cash@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
-                                    <td>Admin Manager</td>
-                                    <td>+65 96445229</td>
-                                    <td>xu@hoiio.com</td>
-                                    <td>04 Mar 2016, 06:50 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
-                                    <td>UX Designer</td>
-                                    <td>+65 97507182</td>
-                                    <td>hime@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="title">Stars & Dots</div>
-                <div class="column">
-                    <!-- Star & Dot -->
-                    <div class="ui page content segment">
-                        <table class="ui very basic compact unstackable table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </th>
-                                    <th></th>
-                                    <th></th>
-                                    <th>Full Name</th>
-                                    <th>Job Title</th>
-                                    <th>Phone Number</th>
-                                    <th>Email</th>
-                                    <th>Last Accessed</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-rating="1" data-max-rating="1"></div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_1.jpg"><span>Steve Van</span></td>
-                                    <td>General Manager</td>
-                                    <td>+84 905721417</td>
-                                    <td>stevean@hoiio.com</td>
-                                    <td>03 Mar 2016, 11:47 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_2.jpg"><span>Tuan Vo</span></td>
-                                    <td>Team Lead</td>
-                                    <td>+65 91271034</td>
-                                    <td>tuan@hoiio.com</td>
-                                    <td>26 Feb 2016, 08:18 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty success circular label" data-position="top center" data-content="Online" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_3.jpg"><span>Cash Hoang</span></td>
-                                    <td>Senior Engineer</td>
-                                    <td>+65 97507182</td>
-                                    <td>cash@hoiio.com</td>
-                                    <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                    </td>
-                                    <td class="dot">
-                                        <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                    </td>
-                                    <td><img class="ui avatar image" src="dist/img/avatar/ava_4.jpg"><span>Huyen Xu</span></td>
-                                    <td>Admin Manager</td>
-                                    <td>+65 96445229</td>
-                                    <td>xu@hoiio.com</td>
-                                    <td>04 Mar 2016, 06:50 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="ui checkbox">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td class="star">
-                                        <div class="ui star rating" data-max-rating="1"></div>
-                                        <td class="dot">
-                                            <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-                                        </td>
-                                        <td><img class="ui avatar image" src="dist/img/avatar/ava_5.jpg"><span>Uyen Hime</span></td>
-                                        <td>UX Designer</td>
-                                        <td>+65 97507182</td>
-                                        <td>hime@hoiio.com</td>
-                                        <td>01 Feb 2016, 11:42 AM</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-
-                <!--<div class="title"></div>
-                <div class="column">
-
-
-    <div class="ui page content segment">
-    <table class="ui very basic compact unstackable table">
-    <thead>
-    <tr>
-        <th>
-            <div class="ui checkbox"><input type="checkbox"><label></label></div>
-        </th>
-        <th></th>
-        <th></th>
-        <th class="one wide">App</th>
-        <th>Subscription</th>
-        <th>From number</th>
-        <th>To number</th>
-        <th>Answered by</th>
-        <th>Call details</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>
-            <div class="ui checkbox"><input type="checkbox" name="all"><label></label>
-            </div>
-        </td>
-        <td class="star"><div class="ui star rating" data-rating="1" data-max-rating="1"></div></td>
-        <td class="dot">
-            <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-        </td>
-        <td>
-            <img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/sourdist/img/app_1.png">
-        </td>
-        <td>+84 905721417</td>
-        <td>+84 8302482</td>
-        <td>+63 30435336</td>
-        <td data-value="blank">-</td>
-        <td>01 Feb, 2016  11:42 AM <span data-type="sub-detail">(19 min)</span></td>
-    </tr>
-    <tr>
-        <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
-        <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
-        <td class="dot">
-            <a class="ui empty success circular label" data-position="top center" data-content="Online" data-variation="inverted"></a>
-        </td>
-        <td><img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/sourdist/img/app_11.png"></td>
-        <td>sip +65 91271034</td>
-        <td>+65 8399273</td>
-        <td>+63 30435336</td>
-        <td data-value="blank">-</td>
-        <td>14 Jan, 2016  01:42 PM <span data-type="sub-detail">(22 min)</span></td>
-    </tr>
-    <tr>
-        <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
-        <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
-        <td class="dot">
-            <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-        </td>
-        <td><img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/sourdist/img/app_5.png"></td>
-        <td>+65 97507182</td>
-        <td>+83 73992272</td>
-        <td>+94 62598461</td>
-        <td>+84 7733923</td>
-        <td>01 Jan, 2016  09:22 AM <span data-type="sub-detail">(9 min)</span></td>
-    </tr>
-    <tr>
-        <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
-        <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
-        <td class="dot">
-            <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-        </td>
-        <td><img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/sourdist/img/app_6.png"></td>
-        <td>+65 96445229</td>
-        <td>+84 92087283</td>
-        <td>+94 62598461</td>
-        <td>+84 7733923</td>
-        <td>24 Dec, 2015  12:13 PM <span data-type="sub-detail">(13 min)</span></td>
-    </tr>
-    <tr>
-        <td><div class="ui checkbox"><input type="checkbox" name="all"><label></label></div></td>
-        <td class="star"><div class="ui star rating" data-max-rating="1"></div></td>
-        <td class="dot">
-            <a class="ui empty circular label" data-position="top center" data-content="Offline" data-variation="inverted"></a>
-        </td>
-        <td><img class="ui mini radius image" src="https://raw.githubusercontent.com/TenHime/hoiio-portal/gh-pages/sourdist/img/app_8.png"></td>
-        <td>sip2 +84 28394728</td>
-        <td>+65 83927433</td>
-        <td>+63 30435336</td>
-        <td data-value="blank">-</td>
-        <td>20 Dec, 2015  03:11 PM <span data-type="sub-detail">(6 min)</span></td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-        <th colspan="8">
-
-            <div class="ui right floated pagination menu">
-                <a class="icon item">
-                <i class="chevron left icon"></i>
-                </a>
-                <a class="item active">1</a>
-                <a class="item">2</a>
-                <a class="item">3</a>
-                <a class="item">4</a>
-                <a class="icon item">
-                <i class="chevron right icon"></i>
-                </a>
-            </div>
-        </th>
-    </tr>
-    </tfoot>
-    </table>
+        <!-- Footer -->
+        <div id="footer"></div>
     </div>
-
-
-
-
-                </div> -->
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Footer -->
-    <div id="footer"></div>
-
-
     <!-- Custom JS -->
+    <!-- Custom JS -->
+    <script src="dist/js/d3.js"></script>
+    <script src="dist/js/lodash.js"></script>
+    <script src="dist/menu/menuOverlay.js"></script>
+    <script src="dist/data/allData.js"></script>
     <script src="dist/js/highlight.pack.js"></script>
     <script src="dist/js/loadData.js"></script>
     <script src="dist/js/component.js"></script>

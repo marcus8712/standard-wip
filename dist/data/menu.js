@@ -65,10 +65,6 @@ d3.csv("/standard-wip/dist/data/data.csv", function (error, data) {
                 }
             }
 
-
-
-
-
         }
 
         if (d.type == "pattern") {

@@ -1,0 +1,20 @@
+type,id,link,title
+category,standards,,Home
+section,standards,home,Introduction
+section,standards,download,Download
+section,standards,contact,Contact Us
+category,structure,,Structure
+section,structure,layout,Layout
+section,structure,grid,Grid
+category,style,,Styles
+section,style,color,Color Palette
+section,style,typo,Typography
+section,style,icon,Icon Package
+category,component,,Components
+section,component,component,Components
+category,pattern,,Patterns
+section,pattern,pattern,Patterns
+category,state,,State
+section,state,state,State
+category,sample,,Sample
+section,sample,sample,Sample

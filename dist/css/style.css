@@ -1,0 +1,272 @@
+/*--------------------------
+    typopage
+----------------------------*/
+
+*[data-page="typo"] #content .block > .grid {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+*[data-page="typo"] #content .block > p {
+    max-width: 500px;
+}
+
+*[data-page="typo"] #poppins .column,
+*[data-page="typo"] #heading .column {
+    padding: 0 !important;
+}
+
+*[data-page="typo"] .fontitem {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+*[data-page="typo"] .identifier {
+    font-size: 11px;
+    color: #777;
+    display: block;
+}
+
+*[data-page="typo"] .Poppins-normal-300 {
+    font-style: normal;
+    font-weight: 300;
+}
+
+*[data-page="typo"] .Poppins-normal-400 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+*[data-page="typo"] .Poppins-normal-500 {
+    font-style: normal;
+    font-weight: 500;
+}
+
+*[data-page="typo"] .Poppins-normal-600 {
+    font-style: normal;
+    font-weight: 600;
+}
+
+*[data-page="typo"] .Poppins-normal-700 {
+    font-style: normal;
+    font-weight: 700;
+}
+
+*[data-page="typo"] .headingOne {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+*[data-page="typo"] .headingOneVariation {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+*[data-page="typo"] .headingTwo {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+*[data-page="typo"] .headingTwoVariation {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+*[data-page="typo"] .headingThree {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+*[data-page="typo"] .headingFour {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+*[data-page="typo"] .headingFive {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+*[data-page="typo"] .headingSix {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+*[data-page="typo"] .headingSixUppercase {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/*--------------------------
+    iconpage
+----------------------------*/
+
+*[data-page="icon"] #content .block > .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+*[data-page="icon"] #content .block > p {
+    max-width: 500px;
+}
+
+*[data-page="icon"] #content .block:first-child > .title {
+    margin-top: -30px;
+}
+
+*[data-page="icon"] .iconList {
+    width: 100% !important;
+}
+
+*[data-page="icon"] .iconList i.icon {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: auto;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+*[data-page="icon"] .iconList span {
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: lowercase;
+}
+
+
+/*--------------------------
+    colorpage
+----------------------------*/
+
+*[data-page="color"] #content .block > .grid {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+*[data-page="color"] #content .block > p {
+    max-width: 500px;
+}
+
+*[data-page="color"] .colorItem {
+    font-family: 'Karla', sans-serif;
+}
+
+*[data-page="color"] .colorItem > .colorName {
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 14.5px;
+}
+
+*[data-page="color"] .colorItem > .colorBox {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+*[data-page="color"] .colorItem > .colorCode {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14.5px;
+}
+
+.colorP {
+    background-color: #008bd9;
+}
+
+.colorPH {
+    background-color: #009bf2;
+}
+
+.colorPA {
+    background-color: #007bbf;
+}
+
+.colorI {
+    background-color: #2BADD4;
+}
+
+.colorIH {
+    background-color: #40b5d8;
+}
+
+.colorIA {
+    background-color: #279cbf;
+}
+
+.colorS {
+    background-color: #19b37b;
+}
+
+.colorSH {
+    background-color: #1cc98a;
+}
+
+.colorSA {
+    background-color: #169d6c;
+}
+
+.colorW {
+    background-color: #E5791A;
+}
+
+.colorWH {
+    background-color: #E88631;
+}
+
+.colorWA {
+    background-color: #CE6D17;
+}
+
+.colorE {
+    background-color: #E64333;
+}
+
+.colorEH {
+    background-color: #E95849;
+}
+
+.colorEA {
+    background-color: #E32E1C;
+}
+
+.colorPE {
+    background-color: #E6DB19;
+}
+
+.colorPEH {
+    background-color: #EBE247;
+}
+
+.colorPEA {
+    background-color: #CFC517;
+}
+
+.colorMW {
+    background-color: #E8E8E8;
+}
+
+.colorLG {
+    background-color: #EEE;
+}
+
+.colorG {
+    background-color: #767676;
+}
+
+.colorMG {
+    background-color: #CCC;
+}
+
+.colorLB {
+    background-color: #555;
+}
+
+.colorB {
+    background-color: #414141;
+}

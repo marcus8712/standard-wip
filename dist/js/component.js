@@ -33,13 +33,28 @@ $(window).scroll(function () {
 
 });
 
+//Button Menu
+var $mobileWidth = $('.mobile-toggle').css("right");
+var $before = parseInt($mobileWidth);
+var $after = $before + 15;
+var styleAfter = {
+    'right': ($after)
+};
+var styleBefore = {
+    'right': ($before)
+};
 
+$('.mobile-toggle').click(function () {
+    if ($(this).attr('aria-expanded') == "true") {
+        $(this).css(styleBefore);
+    } else {
+        $(this).css(styleAfter);
+    }
 
+});
 
 // Ready
-
 $(document).ready(function () {
-
 
 
     /*------------------
@@ -61,9 +76,6 @@ $(document).ready(function () {
         }
     });
 
-    /*------------------
-        Homepage
-    -------------------*/
 
     /*------------------
         Component
@@ -97,7 +109,6 @@ $(document).ready(function () {
 
 
 // Sidebar
-
 $('.ui.sidebar').on('mousewheel DOMMouseScroll', function (e) {
     var scrollTo = null;
 

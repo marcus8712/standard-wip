@@ -45,7 +45,7 @@
                 <a href="./"><img src="dist/img/connected.svg" alt="Hoiio Logo"></a>
             </div>
         </div>
-        <button class="ui button mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+        <button class="ui button mobile-toggle expand" aria-label="Menu" aria-expanded="false" aria-controls="menu">
             <div class="bar top-bar"></div>
             <div class="bar middle-bar"></div>
             <div class="bar bottom-bar"></div>
@@ -164,19 +164,19 @@
                     <div class="column pattern" data-align="center" data-width="large">
                         <div class="clearfix mosaicflow">
                             <div class="mosaicflow__item">
-                                <img src="dist/img/pattern/list.png" alt="">
+                                <img src="dist/img/home/list.png" alt="">
                             </div>
                             <div class="mosaicflow__item">
-                                <img src="dist/img/pattern/modal.png" alt="">
+                                <img src="dist/img/home/modal.png" alt="">
                             </div>
                             <div class="mosaicflow__item">
-                                <img src="dist/img/pattern/right-panel.png" alt="">
+                                <img src="dist/img/home/right-panel.png" alt="">
                             </div>
                             <div class="mosaicflow__item">
-                                <img src="dist/img/pattern/message.png" alt="">
+                                <img src="dist/img/home/message.png" alt="">
                             </div>
                             <div class="mosaicflow__item">
-                                <img src="dist/img/pattern/calendar.png" alt="">
+                                <img src="dist/img/home/calendar.png" alt="">
                             </div>
                         </div>
 
@@ -219,12 +219,27 @@
     <script src="dist/data/general.js"></script>
 
     <script>
-        var mobileWidth = $('.mobile-toggle').offset().right;
-        alert(mobileWidth);
-        var aftermobileWidth = mobileWidth + 15;
-        $(".open .mobile-toggle").css({
-            right: "'" + aftermobileWidth + "'"
+        var $mobileWidth = $('.mobile-toggle').css("right");
+        var $before = parseInt($mobileWidth);
+        var $after = $before + 15;
+        var styleAfter = {
+            'right': ($after)
+        };
+        var styleBefore = {
+            'right': ($before)
+        };
+
+        $('.mobile-toggle').click(function () {
+            if ($(this).attr('aria-expanded') == "true") {
+                $(this).css(styleBefore);
+            } else {
+                $(this).css(styleAfter);
+            }
+
         });
+
+
+
         $(document).ready(function () {
 
 
@@ -337,7 +352,7 @@
 
     <script src="dist/js/d3.js"></script>
     <script src="dist/js/lodash.js"></script>
-    <script src="dist/data/menu.js"></script>
+    <script src="dist/data/allData.js"></script>
 
 </body>
 

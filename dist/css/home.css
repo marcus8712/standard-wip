@@ -1,0 +1,357 @@
+/*------------------------
+    homepage > content
+--------------------------*/
+
+*[data-page="home"] #content > div:not(:first-child) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+*[data-page="home"] #content .grid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+*[data-page="home"] #content .title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+*[data-page="home"] #content p.tag-line {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin: 20px auto;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+}
+
+*[data-page="home"] #content p.description {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+*[data-page="home"] #content .head {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+*[data-page="home"] #content .row + .row {
+    margin-top: 40px;
+}
+
+
+/*--------------------------------------
+    homepage > content > intro
+----------------------------------------*/
+
+#intro {
+    width: 100%;
+    height: calc(100vh);
+    min-height: 480px;
+    /*    background-color: #f6f6f6;*/
+    position: relative;
+    z-index: 1;
+}
+
+*[data-style="first-screen"] {
+    border: 22px solid #FFFFFF;
+    max-width: 100%;
+}
+
+#intro p {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#intro .present {
+    font-weight: bold;
+    position: relative;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-width: 2px !important;
+}
+
+#intro .standard-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    position: relative;
+}
+
+#intro-bottom {
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*--------------------------------------
+    homepage > content > subscribe
+----------------------------------------*/
+
+#subscribe {
+    padding-bottom: 0 !important;
+}
+
+#subscribe .ui.input > .email {
+    background: #FFFFFF;
+    float: left;
+    width: 60%;
+    min-width: 360px;
+    font-family: 'Karla', sans-serif !important;
+    font-size: 14px;
+}
+
+#subscribe .ui.input > input {
+    border-radius: 0;
+    padding: 30px 16px !important;
+}
+
+#subscribe .ui.input > .button {
+    width: 100px !important;
+    text-align: center;
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    background: #414141;
+    border-color: #414141;
+    border-radius: 0;
+}
+
+
+/*--------------------------------------
+    homepage > content > patterns
+----------------------------------------*/
+
+#pattern .grid .row {
+    margin: 0 auto;
+}
+
+#pattern .column {
+    margin: 0 auto;
+}
+
+#pattern .column .work img {
+    vertical-align: middle;
+}
+
+#pattern .column .work a {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-width: 2px !important;
+    margin-left: 10px;
+}
+
+#pattern img.icon {
+    width: 85px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+.mosaicflow__column {
+    float: left;
+}
+
+.mosaicflow__column {
+    padding-right: 20px;
+}
+
+.mosaicflow {
+    margin-left: 20px;
+}
+
+.mosaicflow__column .mosaicflow__item {
+    margin-bottom: 20px;
+}
+
+.mosaicflow__column .mosaicflow__item:last-child {
+    margin-bottom: 0;
+}
+
+.mosaicflow__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*--------------------------------------
+    homepage > content > components
+----------------------------------------*/
+
+#components {
+    position: relative;
+    z-index: 3;
+}
+
+#components .number {
+    content: '37';
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 130px;
+    letter-spacing: 3px;
+    opacity: 0.1;
+    top: -24%;
+    left: 38%;
+}
+
+#components .title {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#components p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 20px auto;
+    font-family: 'Karla', sans-serif;
+}
+
+#components img.icon {
+    width: 85px;
+}
+
+#components .button {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-width: 2px !important;
+}
+
+
+/*--------------------------------------
+    homepage > content > styles
+----------------------------------------*/
+
+#styles {
+    position: relative;
+    z-index: 3;
+}
+
+#styles .item div {
+    font-size: 12px;
+    padding: 4px 8px;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 65px;
+    float: left;
+    border-radius: 3px;
+}
+
+#styles .left.column {
+    padding-right: 20px;
+    padding-left: 150px;
+}
+
+#styles .right.column {
+    padding-right: 30px;
+    padding-left: 140px;
+}
+
+#styles .left.column,
+#styles .right.column {
+    position: relative;
+}
+
+#styles .left.column > img.icon {
+    position: absolute;
+    left: 40px;
+    width: 85px;
+}
+
+#styles .right.column > img.icon {
+    position: absolute;
+    left: 30px;
+    width: 85px;
+}
+
+
+/*--------------------------------------
+    homepage > content > layout
+----------------------------------------*/
+
+#layout {
+    position: relative;
+    z-index: 2;
+}
+
+#layout .number {
+    content: '04';
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 130px;
+    letter-spacing: 3px;
+    opacity: 0.1;
+    top: -11%;
+    left: 38%;
+}
+
+#layout .title {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#layout .image {
+    position: relative;
+    height: 400px;
+    top: 100px;
+    left: 50%;
+    width: 466px;
+    margin-left: -200px;
+}
+
+#layout .image img {
+    width: 350px;
+    background: #FFFFFF;
+    box-shadow: -9px 19px 65px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    border-radius: 5px;
+}
+
+#layout .image > .one img {
+    top: 0;
+    left: 0px;
+}
+
+#layout .image > .two img {
+    top: 115px;
+    left: -45px;
+}
+
+#layout .image > .three img {
+    top: -77px;
+    left: 50px;
+}
+
+#layout .image > .four img {
+    top: 0px;
+    left: 415px;
+}

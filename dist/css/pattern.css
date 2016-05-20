@@ -1,0 +1,48 @@
+/*--------------------------
+    patternpage
+----------------------------*/
+
+*[data-page="pattern"] .block > .grid,
+*[data-page="pattern-child"] .block > .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+*[data-page="pattern-child"] .block > .grid .ui + .ui {
+    margin-top: 40px;
+}
+
+*[data-page="pattern"] .block > p,
+*[data-page="pattern-child"] .block > p {
+    max-width: 500px;
+}
+
+*[data-page="pattern"] .page.head,
+*[data-page="pattern"] .page.information {
+    margin-bottom: 40px !important;
+    border: 1px solid #ddd !important;
+}
+
+*[data-page="pattern"] span.time {
+    font-weight: 600;
+}
+
+*[data-page="pattern"] span.all {
+    font-weight: 600;
+}
+
+*[data-page="pattern"] span.all + a {
+    cursor: pointer;
+}
+
+*[data-page="pattern"] .ui.inline.dropdown > .text {
+    font-weight: 600!important;
+}
+
+
+/*--------------------------
+    modal
+----------------------------*/
+
+div[data-pattern="modal"] # .block .column {}
